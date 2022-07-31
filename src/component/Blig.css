@@ -1,0 +1,34 @@
+.SlidBlog {
+    background-image: url(../img/breadcrumb-bg.jpg);
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.SlidBlog h1 {
+    font-size: 70px;
+}
+
+.cardLink {
+    position: relative;
+    letter-spacing: 1.2px;
+}
+
+.CardBlog .cardLink::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.CardBlog:hover .cardLink::before {
+    width: 50%;
+    background-color: rgb(190, 29, 29);
+}

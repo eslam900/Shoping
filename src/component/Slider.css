@@ -1,0 +1,41 @@
+.slidInfo {
+    left: 20%;
+}
+
+@media (max-width: 600px) {
+    .slidInfo {
+        left: 0;
+        top: 35% !important;
+    }
+}
+
+.slidInfo h1 {
+    font-size: 62px;
+}
+
+.slidContainer_1 {
+    height: 800px;
+    background-image: url(../img/hero/hero-1.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.slidContainer_2 {
+    height: 800px;
+    background-image: url(../img/hero/hero-2.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+@media (max-width: 600px) {
+    .prev {
+        top: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .next {
+        top: 50%;
+        right: 40%;
+    }
+}
