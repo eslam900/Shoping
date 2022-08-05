@@ -2,7 +2,7 @@ import React from "react";
 
 const CheckForms = () => {
   return (
-    <div className="col-lg-8 col-md-6 col-12 pe-3">
+    <section className="col-lg-8 col-md-6 col-12 pe-3">
       <h5>BILLING DETAILS</h5>
       <hr />
       <form className="">
@@ -44,7 +44,7 @@ const CheckForms = () => {
             </label>
             <input className="w-100 form-control" type="text" />
           </div>
-          <div className="col-lg-6 ps-lg-3">
+          <div className="col-lg-6 ps-lg-3 mb-4">
             <label className="form-label">
               Email<span className="text-danger">*</span>
             </label>
@@ -61,11 +61,13 @@ const CheckForms = () => {
           Account Password<span className="text-danger">*</span>
         </label>
         <input className="col-12 form-control mb-4" type="text" />
+        <div className="text-nowrap">
         <input className="form-check-input mb-4 me-2" type="checkbox" />
         <label className="form-check-label">
           Note about your order, e.g, special noe for delivery
         </label>
-        <label className="form-label form-control mb-4">
+        </div>
+        <label className="form-label">
           Order notes<span className="text-danger">*</span>
         </label>
         <input
@@ -74,7 +76,7 @@ const CheckForms = () => {
           placeholder="Notes about your order, e.g. special notes for delivery"
         />
       </form>
-    </div>
+    </section>
   );
 };
 

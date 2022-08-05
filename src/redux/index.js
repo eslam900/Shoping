@@ -3,17 +3,17 @@ import { createSlice } from "@reduxjs/toolkit";
 const shopingSlice = createSlice({
   name: "addTOShopingCar",
   initialState: {
-    value: [],
+    CarData: [],
   },
   reducers: {
     add: (state, action) => {
-      state.value.push(action.payload);
+      state.CarData.push(action.payload);
     },
     remove: (state, action) => {
-      state.value = action.payload;
+      state.CarData = action.payload;
     },
     update: (state, action) => {
-      state.value = action.payload;
+      state.CarData = action.payload;
     },
   },
 });

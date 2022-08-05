@@ -4,8 +4,8 @@ import CardCar from "./CardCar";
 import CarTotal from "./CarTotal";
 
 const ShopCar = () => {
-  const { value } = useSelector((state) => state.addTo);
-  return value.length > 0 ? (
+  const { CarData } = useSelector((state) => state.Add_To_Car);
+  return CarData.length > 0 ? (
     <div className="container mt-5 d-lg-flex align-items-start">
       <div className="w-100">
         <table className="table">
@@ -22,7 +22,7 @@ const ShopCar = () => {
               </th>
             </tr>
           </thead>
-          {value.map((item) => (
+          {CarData.map((item) => (
             <CardCar key={item.id} item={item} id={item.id} />
           ))}
         </table>

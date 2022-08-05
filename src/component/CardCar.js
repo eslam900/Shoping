@@ -5,21 +5,21 @@ import { remove, update } from "../redux/index";
 const CardCar = ({ item, id }) => {
   // remove item from car
   const dispatch = useDispatch();
-  const { value } = useSelector((state) => state.addTo);
+  const { CarData } = useSelector((state) => state.Add_To_Car);
   const deleteItem = () => {
-    const NewData = value.filter((items) => items.id !== id);
+    const NewData = CarData.filter((items) => items.id !== id);
     dispatch(remove(NewData));
   };
 
   // increment & decrement quantity of object
   const handelQuantity = (type) => {
     if (type === "increment") {
-      const updateQty = value.map((x) =>
+      const updateQty = CarData.map((x) =>
         x.id === id ? { ...x, qty: x.qty + 1 } : x
       );
       dispatch(update(updateQty));
     } else {
-      const updateQty = value.map((x) =>
+      const updateQty = CarData.map((x) =>
         x.id === id && x.qty > 1 ? { ...x, qty: x.qty - 1 } : x
       );
       dispatch(update(updateQty));

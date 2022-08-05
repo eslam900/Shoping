@@ -2,18 +2,18 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Receipt = () => {
-  const { value } = useSelector((state) => state.addTo);
+  const { CarData } = useSelector((state) => state.Add_To_Car);
 
   const getTotal = () => {
     const sumQty = [];
-    value.map((x) => sumQty.push(x.qty * x.price));
+    CarData.map((x) => sumQty.push(x.qty * x.price));
     if (sumQty.length > 0) {
       return sumQty.reduce((x, y) => x + y).toFixed(2);
     }
   };
 
   return (
-    <div
+    <section
       className="col-lg-4 col-md-6 col-12 h-100 mt-5 ms-md-3 p-4"
       style={{ backgroundColor: "rgb(243,242,238)" }}
     >
@@ -25,7 +25,7 @@ const Receipt = () => {
           <div>Total</div>
         </div>
         <ol>
-          {value.map((item, idx) => (
+          {CarData.map((item, idx) => (
             <div key={idx} className="d-flex justify-content-between mb-3">
               <li>{item.title}</li>
               <div>{`$ ${(item.price * item.qty).toFixed(2)}`}</div>
@@ -36,13 +36,13 @@ const Receipt = () => {
         <div className="d-flex justify-content-between mb-3">
           <div>Subtotal</div>
           <div className="text-danger">
-            {value.length > 0 ? `$ ${getTotal()}` : "$ 00.00"}
+            {CarData.length > 0 ? `$ ${getTotal()}` : "$ 00.00"}
           </div>
         </div>
         <div className="d-flex justify-content-between mb-3">
           <div>Total</div>
           <div className="text-danger">
-            {value.length > 0 ? `$ ${getTotal()}` : "$ 00.00"}
+            {CarData.length > 0 ? `$ ${getTotal()}` : "$ 00.00"}
           </div>
         </div>
         <hr />
@@ -59,7 +59,7 @@ const Receipt = () => {
         <label className="form-check-label">Paypal</label>
         <button className="btn btn-dark w-100">PLACE ORDER</button>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -2,11 +2,11 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const CarTotal = () => {
-  const { value } = useSelector((state) => state.addTo);
+  const { CarData } = useSelector((state) => state.Add_To_Car);
 
   const getTotal = () => {
     const sumQty = [];
-    value.map((x) => sumQty.push(x.qty * x.price));
+    CarData.map((x) => sumQty.push(x.qty * x.price));
 
     return sumQty.reduce((x, y) => x + y).toFixed(2);
   };

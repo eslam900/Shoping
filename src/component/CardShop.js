@@ -5,12 +5,12 @@ import { add, update } from "../redux/index.js";
 
 const CardShop = ({ item, id }) => {
   const dispatch = useDispatch();
-  const { value } = useSelector((state) => state.addTo);
+  const { CarData } = useSelector((state) => state.Add_To_Car);
   const handelCar = () => {
     const carData = data.find((item) => item.id === id);
-    const check = value.find((item) => item.id === id);
+    const check = CarData.find((item) => item.id === id);
     if (check) {
-      const updateQty = value.map((x) =>
+      const updateQty = CarData.map((x) =>
         x.id === id ? { ...x, qty: x.qty + 1 } : x
       );
       dispatch(update(updateQty));

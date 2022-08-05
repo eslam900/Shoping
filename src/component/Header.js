@@ -4,10 +4,10 @@ import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./Header.css";
 const Header = () => {
-  const { value } = useSelector((state) => state.addTo);
+  const { CarData } = useSelector((state) => state.Add_To_Car);
   const getTotal = () => {
     const sumQty = [];
-    value.map((x) => sumQty.push(x.qty * x.price));
+    CarData.map((x) => sumQty.push(x.qty * x.price));
 
     return sumQty.reduce((x, y) => x + y).toFixed(2);
   };
@@ -42,11 +42,11 @@ const Header = () => {
                 <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
               </svg>
               <span className="text-danger fw-bold position-absolute start-50 top-50 translate-middle mt-1">
-                {value.length < 10 ? `0${value.length}` : value.length}
+                {CarData.length < 10 ? `0${CarData.length}` : CarData.length}
               </span>
             </Link>
             <div className="fw-bold">
-              {value.length <= 0 ? "$0.00" : `$ ${getTotal()}`}
+              {CarData.length <= 0 ? "$0.00" : `$ ${getTotal()}`}
             </div>
             <button
               type="button"
@@ -146,11 +146,11 @@ const Header = () => {
                   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                 </svg>
                 <span className="fw-bold position-absolute start-50 top-50 translate-middle mt-1">
-                  {value.length < 10 ? `0${value.length}` : value.length}
+                  {CarData.length < 10 ? `0${CarData.length}` : CarData.length}
                 </span>
               </Link>
               <div className="fw-bold text-nowrap  d-none d-md-block">
-                {value.length <= 0 ? "$0.00" : `$ ${getTotal()}`}
+                {CarData.length <= 0 ? "$0.00" : `$ ${getTotal()}`}
               </div>
               <div className="input-group flex-nowrap d-md-none d-lg-flex mt-4 mt-md-0">
                 <span className="input-group-text" id="addon-wrapping">
