@@ -4,9 +4,9 @@ const NavDetails = () => {
   return (
     <div className="col-9 m-auto mt-5">
       <nav className="d-flex justify-content-around">
-        <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist">
+        <div className="nav nav-tabs mb-4" id="nav-tab" role="tablist">
           <button
-            class="nav-link active"
+            className="nav-link active"
             id="nav-home-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-home"
@@ -18,7 +18,7 @@ const NavDetails = () => {
             Description
           </button>
           <button
-            class="nav-link"
+            className="nav-link"
             id="nav-profile-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-profile"
@@ -30,7 +30,7 @@ const NavDetails = () => {
             Customer Previews(5)
           </button>
           <button
-            class="nav-link"
+            className="nav-link"
             id="nav-contact-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-contact"
@@ -43,9 +43,9 @@ const NavDetails = () => {
           </button>
         </div>
       </nav>
-      <div class="tab-content text-start mt-4" id="nav-tabContent">
+      <div className="tab-content text-start mt-4" id="nav-tabContent">
         <div
-          class="tab-pane fade show active"
+          className="tab-pane fade show active"
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
@@ -89,7 +89,7 @@ const NavDetails = () => {
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="nav-profile"
           role="tabpanel"
           aria-labelledby="nav-profile-tab"
@@ -127,7 +127,7 @@ const NavDetails = () => {
           </div>
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="nav-contact"
           role="tabpanel"
           aria-labelledby="nav-contact-tab"

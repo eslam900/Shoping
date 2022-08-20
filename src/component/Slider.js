@@ -21,7 +21,7 @@ const Slider = () => {
               </p>
               <Link className="btn btn-dark p-2 pe-4 ps-4 fs-4" to="/shop">
                 <span className=" me-3">Shop now</span>
-                <BsArrowRight style={{"height":"1.25em","width":"1.25em"}}/>
+                <BsArrowRight style={{ height: "1.25em", width: "1.25em" }} />
               </Link>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Slider = () => {
               </p>
               <Link className="btn btn-dark p-2 pe-4 ps-4 fs-4" to="#">
                 <span className=" me-3">Shop now</span>
-                <BsArrowRight style={{"height":"1.25em","width":"1.25em"}}/>
+                <BsArrowRight style={{ height: "1.25em", width: "1.25em" }} />
               </Link>
             </div>
           </div>
