@@ -7,6 +7,7 @@ import Contacts from "./pages/Contacts";
 import ProductDetails from "./pages/ProductDetails";
 import CheckOut from "./pages/CheckOut";
 import "./App.css";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/Shop/ShopingCar" element={<ShopingCar />}></Route>
         <Route path="/Shop/ProductDetails" element={<ProductDetails />}></Route>
         <Route path="/Shop/CheckOut" element={<CheckOut />}></Route>
-      </Routes>
+        <Route path="/AboutUs" element={<AboutUs />}></Route>
+        </Routes>
     </div>
   );
 }

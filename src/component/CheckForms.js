@@ -7,7 +7,7 @@ const CheckForms = () => {
       <hr />
       <form className="">
         <div className=" d-lg-flex w-100 justify-content-between mb-4">
-          <div className="col-lg-6 pe-lg-3">
+          <div className="col-lg-6 pe-lg-3 mb-2">
             <label className="form-label">
               Fist Name<span className="text-danger">*</span>
             </label>

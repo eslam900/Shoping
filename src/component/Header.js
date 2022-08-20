@@ -82,31 +82,31 @@ const Header = () => {
                   Pages
                 </NavLink>
                 <ul
-                  className="dropdown-menu"
+                  className="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li className="dropdown-item ">
-                    <Link className="nav-link" to="#">
+                  <li className="dropdown-item">
+                    <Link className="nav-link text-light" to="/AboutUs">
                       About Us
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link className="nav-link" to="/Shop/productDetails">
+                    <Link className="nav-link text-light" to="/Shop/productDetails">
                       Shop Details
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link className="nav-link" to="/Shop/ShopingCar">
+                    <Link className="nav-link text-light" to="/Shop/ShopingCar">
                       Shoping Car
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link className="nav-link" to="/Shop/CheckOut">
+                    <Link className="nav-link text-light" to="/Shop/CheckOut">
                       Chek Out
                     </Link>
                   </li>
                   <li className="dropdown-item">
-                    <Link className="nav-link" to="#">
+                    <Link className="nav-link text-light" to="#">
                       Blog Details
                     </Link>
                   </li>
@@ -146,7 +146,7 @@ const Header = () => {
                   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                 </svg>
                 <span className="fw-bold position-absolute start-50 top-50 translate-middle mt-1">
-                  {CarData.length < 10 ? `0${CarData.length}` : CarData.length}
+                  {CarData.length < 10 ? `${CarData.length}` : CarData.length}
                 </span>
               </Link>
               <div className="fw-bold text-nowrap  d-none d-md-block">

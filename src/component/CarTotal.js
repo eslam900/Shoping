@@ -27,7 +27,7 @@ const CarTotal = () => {
           APPLAY
         </button>
       </div>
-      <div className="card p-3 bg-info ">
+      <div className="card p-3" style={{"backgroundColor":"rgb(243,242,238)"}}>
         <h6 className="fw-bold ps-4 pt-4">CART TOTAL</h6>
         <div className="d-flex align-items-center justify-content-between p-4">
           <div>Subtotal</div>

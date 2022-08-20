@@ -1,0 +1,19 @@
+.TestImonial_pic{
+    background-image: url("../img/about/testimonial-pic.jpg");
+    background-position: center;
+    height: 600px;
+}
+
+.TestImonial_text{
+    padding: 150px 140px;
+}
+@media(max-width: 1199px){
+    .TestImonial_text{
+        padding: 150px 45px;
+    }    
+}
+@media(max-width: 767px){
+    .TestImonial_text{
+        padding: 50px 0;
+    }    
+}
