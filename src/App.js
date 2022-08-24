@@ -8,10 +8,11 @@ import ProductDetails from "./pages/ProductDetails";
 import CheckOut from "./pages/CheckOut";
 import "./App.css";
 import AboutUs from "./pages/AboutUs";
+import { Fragment } from "react";
 
 function App() {
   return (
-      <BrowserRouter>
+      <Fragment>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="Shop" element={<Shop />}></Route>
@@ -25,7 +26,7 @@ function App() {
           <Route path="Shop/CheckOut" element={<CheckOut />}></Route>
           <Route path="AboutUs" element={<AboutUs />}></Route>
         </Routes>
-      </BrowserRouter>
+      </Fragment>
   );
 }
 
