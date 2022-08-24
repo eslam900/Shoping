@@ -14,16 +14,16 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/Shop" element={<Shop />}></Route>
-          <Route path="/Blog" element={<Blog />}></Route>
-          <Route path="/Contacts" element={<Contacts />}></Route>
-          <Route path="/Shop/ShopingCar" element={<ShopingCar />}></Route>
+          <Route path="Shop" element={<Shop />}></Route>
+          <Route path="Blog" element={<Blog />}></Route>
+          <Route path="Contacts" element={<Contacts />}></Route>
+          <Route path="Shop/ShopingCar" element={<ShopingCar />}></Route>
           <Route
-            path="/Shop/ProductDetails"
+            path="Shop/ProductDetails"
             element={<ProductDetails />}
           ></Route>
-          <Route path="/Shop/CheckOut" element={<CheckOut />}></Route>
-          <Route path="/AboutUs" element={<AboutUs />}></Route>
+          <Route path="Shop/CheckOut" element={<CheckOut />}></Route>
+          <Route path="AboutUs" element={<AboutUs />}></Route>
         </Routes>
       </BrowserRouter>
   );
