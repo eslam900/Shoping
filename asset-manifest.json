@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shoping-React-App/static/css/main.7ce74ca8.css",
-    "main.js": "/Shoping-React-App/static/js/main.63314984.js",
+    "main.js": "/Shoping-React-App/static/js/main.9e598400.js",
     "static/media/product-big-4.png": "/Shoping-React-App/static/media/product-big-4.ffd9b7d386a3b6701691.png",
     "static/media/product-big.png": "/Shoping-React-App/static/media/product-big.d719c2dd1d432074781f.png",
     "static/media/about-us.jpg": "/Shoping-React-App/static/media/about-us.05b80316a13651a25137.jpg",
@@ -36,10 +36,10 @@
     "static/media/thumb-2.png": "/Shoping-React-App/static/media/thumb-2.3604fdfbac0872b86637.png",
     "index.html": "/Shoping-React-App/index.html",
     "main.7ce74ca8.css.map": "/Shoping-React-App/static/css/main.7ce74ca8.css.map",
-    "main.63314984.js.map": "/Shoping-React-App/static/js/main.63314984.js.map"
+    "main.9e598400.js.map": "/Shoping-React-App/static/js/main.9e598400.js.map"
   },
   "entrypoints": [
     "static/css/main.7ce74ca8.css",
-    "static/js/main.63314984.js"
+    "static/js/main.9e598400.js"
   ]
 }
