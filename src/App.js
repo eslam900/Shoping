@@ -14,7 +14,7 @@ function App() {
   return (
       <Fragment>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="Shoping-React-App" element={<Home />}></Route>
           <Route path="Shop" element={<Shop />}></Route>
           <Route path="Blog" element={<Blog />}></Route>
           <Route path="Contacts" element={<Contacts />}></Route>

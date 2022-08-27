@@ -54,7 +54,7 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink
                   className="masterLink nav-link pb-1 fs-5 fw-bold position-relative"
-                  to="/"
+                  to="/Shoping-React-App"
                 >
                   Home
                 </NavLink>
