@@ -20,11 +20,11 @@ const CardShop = ({ item, id }) => {
   };
 
   return (
-    <div className="card col-lg-3 col-sm-5 col-12 border-0 mt-5">
+    <div className="card col-lg-3 col-sm-6 col-12 border-0 mt-5 p-3">
       <img className="card-img-top" src={item.image} alt="...." role="button" />
       <div className="card-body">
         <h6 className="card-title">{item.title}</h6>
-        <h6 className="fw-bold">{item.price}</h6>
+        <h6 className="fw-bold">{`$${item.price}`}</h6>
         <div className=" text-danger fw-bold" role="button" onClick={handelCar}>
           + Add To Car
         </div>
