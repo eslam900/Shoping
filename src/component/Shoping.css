@@ -1,0 +1,9 @@
+.card_shoping .icons_shop{
+    top: 40px;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.card_shoping:hover .icons_shop{
+    right: 35px!important;
+}

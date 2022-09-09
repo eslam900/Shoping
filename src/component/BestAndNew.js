@@ -3,7 +3,7 @@ import { data } from "../data/data";
 import CardShop from "./CardShop";
 
 
-const NavBestNew = () => {
+const BestAndNew = () => {
 const [Item, Setitem] = useState([])
 useEffect(()=>{
   Setitem(data.filter((el)=>el.status !== undefined))
@@ -23,9 +23,9 @@ const HandelClick = (type)=>{
     <li className='nav_Best fs-3 fs-sm-3 fw-bold text-secondary opacity-50 list-unstyled' onClick={()=>HandelClick("new")} role='button'>New Arrivals</li>
     <li className='nav_Best fs-3 fs-sm-3 fw-bold text-secondary opacity-50 list-unstyled' onClick={()=>HandelClick("sale")} role='button'>Hot Sales</li>
     </ul>
-    <div className=" container-sm d-flex flex-wrap align-items-center mt-2 justify-content-center">{Item.map((el,ind)=> <CardShop key={ind} item={el} id={el.id}/> )}</div>
+    <div className=" container-sm d-flex flex-wrap align-items-center mt-2 justify-content-center">{Item.map((el)=> <CardShop key={el.id} item={el} id={el.id}/> )}</div>
     </section>
   )
 }
 
-export default NavBestNew
+export default BestAndNew

@@ -12,7 +12,6 @@ export const data = [
     title: "linen jacket",
     image: require("../img/product/product-2.jpg"),
     price: 43.48,
-    status:"new",
     qty: 1,
   },
   {
@@ -20,7 +19,6 @@ export const data = [
     title: "Ankle Boots",
     image: require("../img/product/product-3.jpg"),
     price: 60.9,
-    status:"sale",
     qty: 1,
   },
   {
@@ -36,7 +34,6 @@ export const data = [
     title: "summer t-shirt",
     image: require("../img/product/product-5.jpg"),
     price: 70.51,
-    status:"sale",
     qty: 1,
   },
   {
@@ -60,7 +57,6 @@ export const data = [
     title: "polo shirt",
     image: require("../img/product/product-8.jpg"),
     price: 77.15,
-    status:"new",
     qty: 1,
   },
   {
@@ -75,6 +71,7 @@ export const data = [
     title: "Women's perfume",
     image: require("../img/product/product-10.jpg"),
     price: 101.25,
+    status:"new",
     qty: 1,
   },
   {
@@ -89,6 +86,7 @@ export const data = [
     title: "Piqué Biker Jacket",
     image: require("../img/product/product-12.jpg"),
     price: 40.00,
+    status:"sale",
     qty: 1,
   },
   {
@@ -96,6 +94,7 @@ export const data = [
     title: "Classic women's bag",
     image: require("../img/product/product-13.jpg"),
     price: 20.12,
+    status:"sale",
     qty: 1,
   },
   {
@@ -103,6 +102,7 @@ export const data = [
     title: "Women's sunglassest",
     image: require("../img/product/product-14.jpg"),
     price: 10.00,
+    status:"new",
     qty: 1,
   },
 ];

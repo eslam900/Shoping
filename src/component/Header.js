@@ -34,9 +34,9 @@ const Header = () => {
               className="text-dark text-decoration-none position-relative"
               to="/Shop/ShopingCar"
             >
-            <BsBag style={{"height":"2em", "width":"2em"}}/>
+            <BsBag style={{"height":"1.5em", "width":"1.5em"}}/>
               <span className="text-danger fw-bold position-absolute start-50 top-50 translate-middle mt-1">
-                {CarData.length < 10 ? `0${CarData.length}` : CarData.length}
+                {CarData.length < 10 ? `${CarData.length}` : CarData.length}
               </span>
             </Link>
             <div className="fw-bold">
@@ -129,7 +129,7 @@ const Header = () => {
                 className="text-dark text-decoration-none position-relative d-none d-md-block"
                 to="/Shop/ShopingCar"
               >
-              <BsBag style={{"height":"2em", "width":"2em"}}/>
+              <BsBag style={{"height":"1.5em", "width":"1.5em"}}/>
                 <span className="fw-bold position-absolute start-50 top-50 translate-middle mt-1">
                   {CarData.length < 10 ? `${CarData.length}` : CarData.length}
                 </span>

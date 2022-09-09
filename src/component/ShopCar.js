@@ -41,7 +41,7 @@ const ShopCar = () => {
     </div>
   ) : (
     <div className="d-flex align-items-center justify-content-center vh-100 fw-bold fs-1 text-capitalize">
-      no selected order
+      no order selected
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Slider from "../component/Slider";
 import Banner from "../component/Banner";
-import BestNew from "../component/NavBestNew";
+import BestAndNew from "../component/BestAndNew";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <Slider />
       <Banner />
-      <BestNew/>
+      <BestAndNew/>
       <Footer />
     </Fragment>
   );

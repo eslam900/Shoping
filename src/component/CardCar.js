@@ -40,20 +40,20 @@ const CardCar = ({ item, id }) => {
         </td>
         <td className="ps-4 lh" style={{ width: "200px", lineHeight: "6" }}>
           <BsCaretLeftFill
-          style={{"height":"1.5em","width":"1.5em"}}
+          style={{"height":"1.25em","width":"1.25em"}}
             role="button"
             onClick={() => handelQuantity("decrement")}
           />
           <span className="fs-5 fw-bold">{item.qty}</span>
           <BsCaretRightFill
-          style={{"height":"1.5em","width":"1.5em"}}
+          style={{"height":"1.25em","width":"1.25em"}}
             role="button"
             onClick={() => handelQuantity("increment")}
           />
         </td>
-        <td className="ps-4 pt-4" style={{ width: "200px", lineHeight: "6" }}>
+        <td className="ps-md-2 pt-4" style={{ width: "200px", lineHeight: "6" }}>
           <div className="fw-bold">
-            {"$ " + Math.floor(`${item.price * item.qty}`)}
+            {"$ " + Math.round(`${item.price * item.qty}`)}
           </div>
         </td>
         <td style={{ paddingTop: "57px" }}>
